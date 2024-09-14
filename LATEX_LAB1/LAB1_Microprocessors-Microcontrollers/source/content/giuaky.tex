@@ -1,0 +1,33 @@
+\chap{Kiểm tra giữa kỳ}
+\section{Bài tập}
+
+\subsection{Bài 1: Giới thiệu}
+ Trong nội dung 5 bài tập này, chúng ta sẽ đi hiện thực một hệ thống thú vị là Slot machine đơn giản.
+ Trong hệ thống này, chúng ta có những yêu cầu sau:
+ \begin{itemize}
+    \item Chúng ta sẽ có một màn hình hiển thị 3 con số. Ở đây thay vì hiển thị các biểu tượng, chúng ta sẽ sử dụng 3 con Led 7 đoạn để thể hiện các con số từ 0 đến 9.
+    \item  Chúng ta sử dụng Switch/Button tượng trưng cho cần kéo để hiện thực thao tác quay số.
+    \item Ngoài ra ta sẽ sử dụng thêm Led đơn để báo hiệu kết quả.
+\end{itemize}
+ Khi người chơi nhấn nút để bắt đầu, 3 con số trên Led 7 đoạn sẽ thay đổi.
+ \\Nếu kết quả 3 con số giống nhau, đèn Led đơn sẽ sáng lên để thông báo người chơi giành chiến thắng.
+ \newline
+Nhằm mục đích hoàn thiện hệ thống. Chúng ta sẽ cần hiện thực thêm tính năng thay đổi 4 chế độ khi quay số như các bài tập sau.
+\subsection{Bài 2: Mode 1}
+Chúng ta sẽ hiện thực thêm chức năng khi tiến hành thao tác quay số.
+Cụ thể hơn, trong chệ độ 1 (Mode 1), khi người chơi nhấn nút 1 lần, hệ thống sẽ tiến hành quay 3 số và sinh ra 3 số ngẫu nhiên.
+\\Việc sinh số ngẫu nhiên có thể đơn giản như tăng các số một lượng cố định nào đó
+Kết quả số hiện lên 3 led 7 đoạn và hiện thông báo người chơi giành chiến thắng hay không trên led đơn.
+\\Chúng ta sẽ sử dụng một timer 10ms cho nội dung bài tập.
+\subsection{Bài 3: Mode 2}
+Ở chế độ thứ 2 (mode 2), khi người chơi nhấn và giữ nút nhấn trong vòng 1s.
+\\Các số trên led 7 đoạn sẽ quay ngẫu nhiên mỗi 0.5s cho đến khi người chơi thả nút nhấn. 
+\\Mỗi lần quay số đều hiện ra trên 3 led 7 đoạn.
+\subsection{Bài 4: Mode 3}
+Ở chế độ thứ 3 (mode 3), khi người chơi nhấn giữ nút nhấn trong vòng 3s.
+Các số trên led 7 đoạn sẽ quay ngẫu nhiên với tốc độ tăng dần, cụ thể thời gian quay 1 lần giảm dần từ 1s xuống 0.9s, sau đó xuống 0.8s cho tới nhỏ nhất là 0.1s.
+\subsection{Bài 5: Mode 4}
+Ở chế độ thứ 4 (mode 4), chế độ này sẽ gần giống chế độ thứ 3. 
+Tuy nhiên khi người chơi thả nút nhấn ra thì tốc độ quay sẽ giảm dấn từ tốc độ hiện tại để nhằm mục đích tạo cảm giác hồi hộp về cuối.
+\\Ví dụ như tốc độ hiện tại là 0.3s quay 1 lần. Khi thả nút nhấn ra thì tốc độ quay sẽ tăng lên 0.4s và tăng cho tới 1s.
+Sau 1s cuối sẽ dừng lại và thông báo kết quả.
